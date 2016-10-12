@@ -4,9 +4,9 @@
 
 #LISTE HIER DEINE SESSIONS AUF
 #tmux ls ZEIGT DEINE SESSION MIT NAMEN AN
-session_name='0'
+session_name=mc_server
 #MINECRAFT ORDNER
-minecraft_folder=/home/minecraft/server_private_tests
+minecraft_folder=/home/minecraft/server
 #BACKUP ORDNER
 backup_folder=/private-backup
 #AKTUELLES DATUM
