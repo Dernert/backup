@@ -10,7 +10,7 @@ minecraft_folder=/home/minecraft/server_private_tests
 #BACKUP ORDNER
 backup_folder=/private-backup
 #AKTUELLES DATUM
-datum=$(date +%d.%m.%y)
+datum=$(date +%d_%m_%y)
 #BACKUP NAMEN
 backup_name=serverbackup_full_$datum.tgz
 
