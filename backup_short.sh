@@ -25,7 +25,7 @@ echo "Server ist gestoppt."
 
 #VERZEICHNIS WIRD GEWECHSELT
 tmux send-keys -t $session_name "cd .." Enter
-sleep 5s
+sleep 1s
 
 #BACKUP WIRD ERSTELLT ---- SYNTAX: tar -czf Backupname.tgz Ordner_der_gepackt_werden_soll
 tmux send-keys -t $session_name "tar -czf $backup_name $minecraft_folder " Enter
@@ -33,7 +33,7 @@ echo "Backup wird erstellt"
 #!!EMPFEHLUNG!!!
 #Zeit hochsetzen, sollte das Packen des Ordner nicht fertig sein und das Script läuft weiter
 #kann es zu Datenverlust kommen!
-sleep 1m
+sleep 5m
 echo "Backup wurde erstellt"
 
 #BACKUP WIRD VERSCHOBEN ---- SYNTAX: mv Backupname.tgz Speicherort
@@ -43,9 +43,9 @@ sleep 5s
 
 #VERZEICHNIS WIRD GEWECHSELT
 tmux send-keys -t $session_name "cd $minecraft_folder " Enter
-sleep 5s
+sleep 1s
 
 #SERVER WIRD GESTARTET
 tmux send-keys -t $session_name "./start.sh" Enter
-sleep 5s
+sleep 1s
 echo "Server gestartet"
